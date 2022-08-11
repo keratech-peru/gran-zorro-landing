@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   :root {
-    --background-color: #6de0e4;
+    --background-color: #514ffe;
   }
 
   * {
@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     background-color: var(--background-color);
+    font-family: 'Roboto', sans-serif;
   }
 `;
 

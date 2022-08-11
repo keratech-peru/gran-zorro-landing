@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import logo from "../assets/gran-zorro-logo.png";
+import Button from "./Button";
 
-const HeaderStyled = styled.header`
+const StyledHeader = styled.header`
   outline: 1px solid red;
+  height: 100px;
 
   & > .header_content {
     outline: 1px solid blue;
@@ -16,21 +18,21 @@ const HeaderStyled = styled.header`
     & > .header__logo {
       outline: 1px solid green;
       & > img {
-        width: 100px;
+        height: 100px;
       }
   }
 `;
 
 const Header = () => {
   return (
-    <HeaderStyled>
+    <StyledHeader>
       <div className="header_content">
         <a className="header__logo" href=".">
           <img src={logo} alt="Gran Zorro Official Logo" />
         </a>
-        <button>¡Únete ya!</button>
+        <Button text="¡ÚNETE YA!" />
       </div>
-    </HeaderStyled>
+    </StyledHeader>
   );
 };
 
